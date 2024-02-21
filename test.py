@@ -1,3 +1,4 @@
+
 def time_from_utc(utc_offset, time):
     """ (number, float) -> float
 
@@ -22,6 +23,7 @@ def time_from_utc(utc_offset, time):
     """
     return (time + utc_offset)%24
 
+'''
 
 print(time_from_utc(+0, 12.0))
 print(time_from_utc(+1, 12.0))
@@ -31,7 +33,9 @@ print(time_from_utc(+6, 6.0))
 print(time_from_utc(-7, 6.0))
 # 23.0
 print(time_from_utc(-1, 0.0))
-  #  23.0
+#  23.0
 print(time_from_utc(-1, 23.0))
-  #  22.0
+#  22.0
 print(time_from_utc(+1, 23.0))
+
+'''
